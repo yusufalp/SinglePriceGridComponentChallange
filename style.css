@@ -1,0 +1,105 @@
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  width: 90%;
+  margin: 5% auto;
+}
+
+section {
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px grey;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+header p {
+  letter-spacing: .1rem;
+  color: hsl(218, 22%, 67%);
+}
+
+header {
+  padding: 36px;
+}
+
+main {
+  color: hsl(204, 43%, 93%);
+}
+
+.subscribe {
+  background-color: hsl(179, 62%, 43%, 90%);
+  color: white;
+  padding: 36px;
+}
+
+.features {
+  background-color: hsl(179, 62%, 43%, 80%);
+  color: white;
+  padding: 36px;
+}
+
+.dollar {
+  font-size: 36px;
+  padding-right: 12px;
+  color: white;
+}
+
+.month {
+  opacity: .5;
+}
+
+header h1,
+header h2,
+header p {
+  width: 90%;
+}
+
+button {
+  height: 48px;
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px lightgrey;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (min-width: 375px) {
+  body {
+    width: 50%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+
+  header h1,
+  header h2,
+  header p {
+    width: 80%;
+  }
+}

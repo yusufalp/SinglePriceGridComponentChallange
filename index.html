@@ -3,160 +3,55 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-      font-family: 'Karla-Bold', sans-serif;
-    }
-
-    h1 {
-      color: hsl(179, 62%, 43%);
-      font-size: 1.5rem;
-      font-weight: 900;
-    }
-
-    h2 {
-      color: hsl(71, 73%, 54%);
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-top: 4%;
-    }
-    h3 {
-      color: white;
-      font-weight: 900;
-      font-size: 1rem;
-      margin-bottom: 10%;
-    }
-
-    p {
-      color: white;
-      line-height: 1.5;
-      opacity: .6;
-    }
-
-    .whole-part {
-      width: 50%;
-      margin: 2% auto;
-      box-shadow: 1px 1px 4px 1px #888888;
-      border-radius: 1%;
-    }
-    .row {
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .top-part,
-    .subscription,
-    .why-us
-    {
-      padding: 6% 6% 3% 6%;
-    }
-
-    .subscription {
-      background-color: hsl(179, 62%, 43%);
-    }
-
-    .why-us {
-      background-color: hsl(179, 62%, 46%);
-    }
-
-    .maintext {
-      color: hsl(218, 22%, 67%);
-    }
-
-    .signup-price {
-      font-size: 2rem;
-      opacity: 1;
-    }
-
-    .permonth {
-      font-size: 1rem;
-      margin-left: 5%;
-      opacity: .5;
-    }
-
-    .btn {
-      box-shadow: 3px 3px 5px 1px #539c3e;
-      background-color: hsl(71, 73%, 54%);
-      border-radius: 5px;
-      color: #ffffff;
-      display: inline-block;
-      font-family: 'Karla', sans-serif;
-      font-size: 20px;
-      margin: 20px 0;
-      padding: 10px 0;
-      width: 100%;
-    }
-
-    .btn:hover {
-      background-color: hsl(71, 73%, 74%);
-      color: #ffffff;
-    }
-
-    .attribution {
-      color: black;
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="whole-part">
-    <div class="row-all top-part">
-      <h1>Join our community</h2>
-        <h2>30-day, hassle-free money back guarantee</h2>
-        <p class="maintext">
-          Gain access to our full library of tutorials along with expert code reviews.<br>
-          Perfect for any developers who are serious about honing their skills.<br>
-        </p>
-    </div>
+<section>
+  <header>
+    <h1>Join our community</h1>
+    <h2>30-day, hassle-free money back guarantee</h2>
+    <p>Gain access to our full library of tutorials along with expert code reviews.
+      Perfect for any developers who are serious about honing their skills.</p>
+  </header>
 
-    <div class="row bottom-part">
-      <div class="col-md-6 subscription">
+  <main>
+
+    <div class="group">
+      <div class="item subscribe">
         <h3>Monthly Subscription</h3>
-        <p class="signup-price">&dollar;29<span class="permonth">per month</span>
-        </p>
-        <p>
-          Full access for less than &dollar;1 a day
-        </p>
-        <button class="btn">Sign Up</button>
+        <p><span class="dollar">&dollar;29</span> <span class="month">per month</span></p>
+        <p>Full access for less than &dollar;1 a day</p>
+        <button>Sign Up</button>
       </div>
 
-      <div class="col-md-6 why-us">
+      <div class="item features">
         <h3>Why Us</h3>
-        <p>
-          Tutorials by industry experts<br>
-          Peer &amp; expert code review<br>
-          Coding exercises<br>
-          Access to our GitHub repos<br>
-          Community forum<br>
-          Flashcard decks<br>
-          New videos every week<br>
-        </p>
+        <p>Tutorials by industry experts</p>
+        <p>Peer &amp; expert code review</p>
+        <p>Coding exercises</p>
+        <p>Access to our GitHub repos</p>
+        <p>Community forum</p>
+        <p>Flashcard decks</p>
+        <p>New videos every week</p>
       </div>
     </div>
-  </div>
 
-
-
-
+  </main>
+</section>
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Y.Alp</a>.
+      Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
 </body>
 
 </html>
