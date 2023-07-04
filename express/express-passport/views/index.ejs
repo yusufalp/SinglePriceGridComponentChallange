@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('head') %>
+
+		<title>Movie Project</title>
+	</head>
+	<body>
+		<h1>Books</h1>
+		<div class="user-interaction">
+			<% if(isUserLoggedIn) { %>
+			<p>Welcome, <%= username %></p>
+			<span><a href="/logout">Logout</a></span>
+			<% } else { %>
+			<span><a href="/login">Login</a></span>
+			<span><a href="/signup">Signup</a></span>
+			<% } %>
+		</div>
+		<form action="/search" method="POST">
+			<label for="movieSearchTerm">Search</label>
+			<input type="text" name="movieSearchTerm" id="movieSearchTerm" />
+			<button type="submit">Search</button>
+		</form>
+		<div class="book-container">
+			<% for (book of books) { %>
+			<div class="book-row">
+				<a href="books/<%= book._id %>">
+					<img src="/images/<%= book.image %>" alt="<%= book.title %>" />
+				</a>
+				<p>Title: <%= book.title %></p>
+				<p>Synopsis: <%= book.synopsis %></p>
+			</div>
+			<% } %>
+		</div>
+	</body>
+</html>

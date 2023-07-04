@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('head') %>
+
+		<title>Login</title>
+	</head>
+	<body>
+		<form class="login-form" action="/login/local" method="POST">
+			<div class="form-label-input">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username" required />
+			</div>
+			<div class="form-label-input">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" required />
+			</div>
+			<button type="submit">Log in</button>
+		</form>
+		<p class="login-github"><a href="/login/github">Login with GitHub</a></p>
+		<!-- <p class="login-google"><a href="/login/google">Login with Google</a></p> -->
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('head') %>
+		<title>Book Details</title>
+	</head>
+	<body>
+		<div class="book-details">
+			<div class="row">
+				<h1><%= book.title %></h1>
+				<img src="/images/<%= book.image %>" alt="" />
+				<p><%= book.author %></p>
+				<p><%= book.synopsis %></p>
+				<p>Genre: <%= book.genre %></p>
+				<p>Rating: <%= book.rating %></p>
+			</div>
+		</div>
+	</body>
+</html>

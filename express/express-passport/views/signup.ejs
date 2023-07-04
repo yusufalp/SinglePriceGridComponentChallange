@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('head') %>
+
+		<title>Login</title>
+	</head>
+	<body>
+		<form class="signup-form" action="/signup" method="POST">
+			<div class="form-label-input">
+				<label for="firstName">First Name</label>
+				<input type="text" name="firstName" id="firstName" required />
+			</div>
+			<div class="form-label-input">
+				<label for="lastName">Last Name</label>
+				<input type="text" name="lastName" id="lastName" required />
+			</div>
+			<div class="form-label-input">
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username" required />
+			</div>
+			<div class="form-label-input">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" required />
+			</div>
+			<input type="hidden" id="strategy" name="strategy" value="local" />
+			<button type="submit">Sign up</button>
+		</form>
+	</body>
+</html>

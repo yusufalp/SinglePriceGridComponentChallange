@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include('head') %>
+
+		<title>Search Results</title>
+	</head>
+</html>
+<body>
+	<h1>Results</h1>
+	<p><a href="/">Back to Home Page</a></p>
+	<p>Results for "<%= searchedFor %>"</p>
+	<div class="movie-container">
+		<% for (result of movieSearchResults) { %>
+		<div class="movie-row">
+			<a href="movies/<%= result.id %>">
+				<img
+					src="<%= imageBaseUrl + result.poster_path %>"
+					alt="<%= result.title %>"
+				/>
+			</a>
+			<p><%= result.title %></p>
+			<p><%= result.overview %></p>
+		</div>
+		<% } %>
+	</div>
+</body>
